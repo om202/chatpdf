@@ -43,8 +43,8 @@ const FileUpload = () => {
         }
         mutate(data, {
           onSuccess: (data) => {
-            console.log(data);
-            alert("File uploaded successfully " + data.message);
+            console.log('File upload status: ', data.message);
+            // alert("File uploaded successfully " + data.message);
           },
           onError: (error) => {
             console.error(error);
