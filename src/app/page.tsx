@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { UserButton, auth } from "@clerk/nextjs";
 import Link from "next/link";
 import { LogIn } from "lucide-react";
-import FileUpload from "@/components/ui/FileUpload";
+import FileUpload from "@/components/FileUpload";
 
 export default async function Home() {
   const { userId } = await auth();
@@ -18,7 +18,7 @@ export default async function Home() {
           <div className="flex mt-2">
             {isAuth && <Button>Go to Chats</Button>}
           </div>
-          <p className="max-w-xl mt-1 text-lg text-slate-600">
+          <p className="max-w-xl mt-2 text-lg text-slate-600">
             We make talking with your documents as easy as talking with your
             friend.
           </p>
